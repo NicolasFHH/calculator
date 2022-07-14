@@ -77,4 +77,9 @@ public class Calculator {
 		}
 		return true;
 	}
+	
+	public double areaDoCirculo (double raioEmMetros) {
+		double pi = 3.141593;
+		return raioEmMetros * raioEmMetros * pi;
+	}
 }
