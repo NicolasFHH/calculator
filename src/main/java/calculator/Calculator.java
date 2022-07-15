@@ -71,10 +71,13 @@ public class Calculator {
 	}
 
 	public boolean checkPrimeNumber(int a) {
-		if (a % 2 == 0 || a % 3 == 0) {
+		if (a % 2 == 0 && a != 2) {
 			return false;
 		}
-		for (int aux = 5; aux < a; aux+=2) {
+		if (a == 2) {
+			return true;
+		}
+		for (int aux = 3; aux < a; aux+=2) {
 			if (a % aux == 0) {
 				return false;
 			}
